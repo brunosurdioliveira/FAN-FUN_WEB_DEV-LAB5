@@ -1,0 +1,61 @@
+<!--
+	Name: Bruno Surdi Oliveira
+	Date: March 2020
+	Purpose: Lab 5 - Arrays
+-->
+<!DOCTYPE html>
+<html>
+
+<body style="background-color: #aaffcd;" onload="changeItemDropdown(50);">
+	<h1>Grocery Store</h1>
+
+	<hr>
+
+	<!-- Department Selection Area -->
+	<h3>Department</h3>
+	<div style="border: 1px solid black; padding: 5px; background-color: #ffffff;">
+		<select id="ddDepartment" onchange="displayProducts();">
+			<option selected disabled>-- Select a Department --</option>
+			<option>Produce</option>
+			<option>Bakery</option>
+			<option>Meats</option>
+			<option>Cheese</option>
+		</select>
+	</div>
+
+	<hr>
+
+	<!-- Product Output Area -->
+	<h3>Products Available</h3>
+	<div id="productOutput" style="border: 1px solid black; padding: 5px; background-color: #ffffff;">[Select a
+		Department]</div>
+
+	<!-- Add Product to Department -->
+	<p>Add Product:
+		<input type="text" id="product">
+		<input type="button" value="Add Product" onclick="addProduct();">
+	</p>
+
+	<hr>
+
+	<!-- Product Selection Field -->
+	<h3>Shopping Cart</h3>
+
+	<p>Add Item #
+		<select id="itemNumDropdown">
+			<option selected disabled value=null>00</option>
+		</select>
+		to Cart:
+		<input type="button" value="Add to Cart" onclick="addItemToCart();">
+	</p>
+
+	<!-- Product Output Area -->
+	<div id="cartOutput" style="border: 1px solid black; padding: 5px; background-color: #ffffff;">[Add an Item to Cart]
+	</div>
+
+	<!-- Javascript -->
+	<script src="Bruno_Lab5.js">
+	</script>
+</body>
+
+</html>
